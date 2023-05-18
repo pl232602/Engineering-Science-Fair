@@ -1,6 +1,7 @@
-
 import serial 
 import sqlite3
+import os
+
 from datetime import datetime
 
 
@@ -137,5 +138,10 @@ def print_serial(name):
         except TypeError as p:
             print(p)
             pass
+
+        except KeyboardInterrupt:
+            print("working as needed, proceed")
+            os.system('sh refresh.sh')
+            break
 
 print_serial("/dev/ttyACM0")
