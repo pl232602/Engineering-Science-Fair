@@ -1,6 +1,7 @@
 import serial 
 import sqlite3
 import os
+import time
 
 from datetime import datetime
 
@@ -17,6 +18,7 @@ def print_serial(name):
     um10=0
     x=0
     while x==0:
+        time.sleep(1000)
         try:
             now=str(datetime.now())
             lines = serial_port.readline()
