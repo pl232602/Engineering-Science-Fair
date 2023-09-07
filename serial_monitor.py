@@ -1,3 +1,4 @@
+from multiprocessing import Value
 import serial 
 import sqlite3
 import os
@@ -138,6 +139,9 @@ def print_serial(name):
                 con.commit()
         except TypeError as p:
             print(p)
+            pass
+
+        except ValueError:
             pass
 
         except KeyboardInterrupt:
