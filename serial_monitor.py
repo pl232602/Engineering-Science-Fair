@@ -148,6 +148,7 @@ def print_serial(name):
             print("working as needed, proceed")
             os.system('sh translate.sh')
             os.system('sh refresh.sh')
+            os.system('rm -r data')
             break
 
 print_serial("/dev/ttyACM0")
