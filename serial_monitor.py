@@ -146,6 +146,7 @@ def print_serial(name):
 
         except KeyboardInterrupt:
             print("working as needed, proceed")
+            os.system('sh translate.sh')
             os.system('sh refresh.sh')
             break
 
