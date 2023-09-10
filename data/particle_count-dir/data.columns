@@ -2,7 +2,7 @@
 "id","INTEGER","4","4","0"
 "datetime","STRING","26","0","0"
 "pm0_3","INTEGER","4","4","0"
-"pm0_5","INTEGER","4","4","0"
+"pm0_5","INTEGER","3","3","0"
 "pm1","INTEGER","3","3","0"
 "pm2_5","INTEGER","2","2","0"
 "pm5","INTEGER","1","1","0"
